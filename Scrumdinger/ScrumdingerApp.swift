@@ -20,7 +20,7 @@ struct ScrumdingerApp: App {
                             if case .failure(let error) = result {
                                 fatalError(error.localizedDescription)
                             }
-                        }0
+                        }
                     }
             }
                 .onAppear{
