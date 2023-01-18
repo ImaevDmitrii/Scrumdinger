@@ -12,11 +12,13 @@ struct History: Identifiable, Codable {
     let date: Date
     var attendees: [DailyScrum.Attendee]
     var lenghtInMunutes: Int
+    var transcript: String?
     
-    init(id: UUID = UUID(), date: Date = Date(),attendees:[DailyScrum.Attendee], lenghtInMunutes: Int = 5){
+    init(id: UUID = UUID(), date: Date = Date(),attendees:[DailyScrum.Attendee], lenghtInMunutes: Int = 5, transcript: String? = nil){
         self.id = id
         self.date = date
         self.attendees = attendees
         self.lenghtInMunutes = lenghtInMunutes
+        self.transcript = transcript
     }
 }
